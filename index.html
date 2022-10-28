@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>drinkSearch 2.0</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="hero-bg">
+        <header>
+            <a href="#">drinkSearch</a>
+        </header>
+
+        <h1><span class="top">Find</span> <span class="mid">Drinking Establishments</span> Near You</h1>
+
+        <div class="form-container">
+            <form action="">
+                <div class="form-left">
+                    <label for="location">Enter your location:</label>
+
+                    <input type="text" name="location" id="location">
+
+                    <p>Example: San Jose, Chicago, New York City, ...</p>
+                </div>
+                <input type="button" value="Find Drinks">
+            </form>
+
+            <div id="map">MAP</div>
+        </div>
+
+        <div class="drinkPNG">
+            <img class="alcoholPNG" src="images/alcohol.png" alt="PNG of an alcoholic drink">
+            <img class="orangePNG" src="images/orange.png" alt="PNG of an orange drink">
+            <img class="bobaPNG" src="images/boba.png" alt="PNG of an boba drink">
+        </div>
+    </div>
+
+    <section class="bottom-page">
+        <div class="left-side">
+            <h2>Thirst Relieving</h2>
+            <p>Feeling thirsty? Want to find a drinks near you? Turn on your location or type in a location and enjoy. This is designed to help people find drinking establishments near them.</p>
+        </div>
+
+        <img src="images/drink2.jpg" alt="Picture of straw in an orange">
+        <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCBrITvrAopLb27esFHprIvmVTRVOk4bm4&libraries=places&callback=initMap" defer>
+        </script>
+        <script type="text/javascript" src="script.js"></script>
+    </section>
+</body>
+
+</html>
